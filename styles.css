@@ -48,8 +48,8 @@
   --mobile-page-right: 24px;
   
   /* Typography Scale */
-  --text-hero: clamp(32px, 8vw, 38px);
-  --text-section-heading: clamp(28px, 6vw, 34px);
+  --text-hero: clamp(28px, 7vw, 38px);
+  --text-section-heading: clamp(26px, 6vw, 34px);
   --text-subheading: clamp(21px, 5vw, 26px);
   --text-card-title: clamp(18px, 4vw, 21px);
   --text-body: 17px;
@@ -66,21 +66,21 @@
 /* Container Padding Breakpoints */
 @media (max-width: 430px) {
   :root {
-    --mobile-page-left: 28px;
+    --mobile-page-left: 24px;
     --mobile-page-right: 24px;
   }
 }
 
 @media (max-width: 393px) {
   :root {
-    --mobile-page-left: 26px;
-    --mobile-page-right: 22px;
+    --mobile-page-left: 24px;
+    --mobile-page-right: 24px;
   }
 }
 
 @media (max-width: 375px) {
   :root {
-    --mobile-page-left: 24px;
+    --mobile-page-left: 20px;
     --mobile-page-right: 20px;
   }
 }
@@ -4816,7 +4816,7 @@ body {
     margin-bottom: 24px !important;
   }
   .pain-situation-card {
-    padding: 14px 12px !important;
+    padding: 16px !important;
     border-radius: 16px !important;
     display: flex !important;
     flex-direction: column !important;
@@ -6446,12 +6446,11 @@ p.desc-desktop {
 /* Paragraphs */
 .story-p {
   font-family: var(--font-body);
-  font-size: 1.02rem;
+  font-size: 1rem;
   color: #374151;
-  line-height: 1.75;
-  margin-bottom: 12px;
+  line-height: 1.65;
+  margin-bottom: 20px;
   word-break: keep-all;
-  line-break: loose;
 }
 
 .story-spacer-top {
@@ -9592,7 +9591,7 @@ section, #real-problem {
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
-    padding: 14px 12px !important;
+    padding: 16px !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
