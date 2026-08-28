@@ -10656,10 +10656,23 @@ section, #real-problem {
 }
 
 /* ==========================================================================
-   GLOBAL MOBILE TYPOGRAPHY FIT PASS (OVERRIDES)
+   GLOBAL RESPONSIVE FIT PASS (OVERRIDES)
    ========================================================================== */
 .keep-together {
   white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  /* Tablet Grid Fixes */
+  .credibility-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Scale down large vertical padding on tablet */
+  .hero-section, .problem-section, .highlight-block, .features-section, .journey-section, .process-section, .bonus-section, .faq-section {
+    padding-top: clamp(60px, 8vw, 80px) !important;
+    padding-bottom: clamp(60px, 8vw, 80px) !important;
+  }
 }
 
 @media (max-width: 430px) {
