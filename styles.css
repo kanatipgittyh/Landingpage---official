@@ -10540,4 +10540,33 @@ section, #real-problem {
   margin-top: 1% !important;
 }
 
+/* ==========================================================================
+   GLOBAL TYPOGRAPHY RHYTHM SYSTEM
+   ========================================================================== */
+.body-copy {
+  font-size: clamp(16px, 2.5vw, 18px);
+  line-height: 1.65;
+  font-weight: 400;
+  text-wrap: pretty;
+}
 
+.body-copy p {
+  margin: 0;
+}
+
+/* Same thought = stay visually connected */
+.body-copy p + p {
+  margin-top: 20px;
+}
+
+/* New thought = slightly larger paragraph gap */
+.body-copy p.new-thought,
+.body-copy .new-thought {
+  margin-top: 32px;
+}
+
+/* New section = clearly larger spacing */
+.body-copy p.new-section,
+.body-copy .new-section {
+  margin-top: 48px;
+}
