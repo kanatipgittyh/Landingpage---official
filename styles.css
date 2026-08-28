@@ -10688,31 +10688,57 @@ section, #real-problem {
   .brand-title { font-size: 15.5px !important; white-space: nowrap; }
   .nav-cta .btn-primary { font-size: 15px !important; padding: 10px 14px !important; height: 44px !important; }
 
-  /* Hero Base Flow & Spacing */
+  /* Hero Base Flow & Spacing via Order */
   .hero-section { margin-top: 0 !important; padding-top: 48px !important; }
-  .hero-content { width: 100% !important; max-width: 390px !important; padding: 0 !important; margin-inline: auto !important; }
-  .hero-title { margin-bottom: 26px !important; width: 100% !important; }
+  .hero-content { 
+    width: 100% !important; 
+    max-width: 390px !important; 
+    padding: 0 !important; 
+    margin-inline: auto !important; 
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .hero-description { display: contents !important; }
+
+  /* Set Flex Order for Natural Flow */
+  .hero-title { order: 1; margin-bottom: 26px !important; width: 100% !important; }
+  .hero-audience-card { order: 2; padding: 16px 20px !important; border-radius: 12px !important; margin-bottom: 24px !important; }
+  .hero-outcome-highlight { order: 3; padding: 16px 20px !important; margin-bottom: 22px !important; }
+  .hero-proof-block { order: 4; margin-bottom: 24px !important; padding-top: 0 !important; border: none !important; }
+  .hero-visual-mobile { order: 5; margin-bottom: 24px !important; }
+  .hero-mechanism-copy { order: 6; margin-bottom: 24px !important; }
+  .hero-offer-group { order: 7; margin-top: 0 !important; }
+  .hero-meta-section { order: 8; margin-top: 40px !important; padding-top: 32px !important; border-top: 1px solid rgba(0,0,0,0.06) !important; }
+
+  /* Typography */
   .hero-title-line-1, .hero-title-line-2 { 
     font-size: clamp(28px, 6.8vw, 31px) !important; 
     line-height: 1.3 !important; display: block !important; margin-top: 0 !important; 
   }
-  
-  /* Hero Supporting Blocks */
-  .hero-audience-card { padding: 16px 20px !important; border-radius: 12px !important; margin-bottom: 24px !important; }
   .audience-main-line { font-size: 17px !important; line-height: 1.4 !important; margin-bottom: 4px !important; }
   .audience-sub-line { font-size: 15.5px !important; }
-
-  .hero-outcome-highlight { margin-bottom: 22px !important; padding: 16px 20px !important; }
   .hero-outcome-text { font-size: 18px !important; line-height: 1.5 !important; text-align: left !important; }
-
-  .hero-mechanism-copy { margin-bottom: 22px !important; font-size: 16px !important; line-height: 1.65 !important; }
   
-  .hero-proof-block { margin-bottom: 40px !important; padding-top: 0 !important; border: none !important; }
   .hero-proof-lead { font-size: 16px !important; line-height: 1.6 !important; margin-bottom: 8px !important; }
   .hero-proof-detail { font-size: 15.5px !important; }
 
+  /* Re-styled Product Description (Now sitting below mockup) */
+  .hero-mechanism-copy { 
+    font-size: 16.5px !important; 
+    line-height: 1.6 !important; 
+    text-align: center !important; 
+    max-width: 350px !important;
+    margin-inline: auto !important;
+    padding-inline: 20px !important;
+    color: var(--text-dark, #0F172A) !important;
+  }
+  .hero-mechanism-copy strong { 
+    font-weight: 700 !important; 
+    color: var(--primary) !important; 
+  }
+  
   /* Mobile Product Mockup */
-  .hero-visual-mobile { margin-bottom: 32px !important; }
   .hero-visual-mobile .iphone-container { 
     width: min(71vw, 280px) !important; 
     margin-inline: auto !important; 
@@ -10721,19 +10747,25 @@ section, #real-problem {
   .floating-badge { width: 36% !important; transform: scale(0.9) !important; transform-origin: top right; }
 
   /* Price Area & CTA */
-  .hero-offer-group { margin-top: 0 !important; }
-  .hero-price-context { display: flex !important; flex-direction: column !important; gap: 8px !important; margin-bottom: 16px !important; }
+  .hero-price-context { display: flex !important; flex-direction: column !important; gap: 8px !important; margin-bottom: 18px !important; }
   .hero-price-anchor { display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: center !important; gap: 8px !important; margin-bottom: 0 !important; }
   .hero-price-strike { font-size: 17px !important; margin-right: 0 !important; }
   .hero-price-scarcity { font-size: 13px !important; padding: 2px 8px !important; }
   .hero-price-subtext { font-size: 15.5px !important; margin-top: 0 !important; }
   
   .hero-actions .btn-primary { 
-    font-size: clamp(15.5px, 4.3vw, 17px) !important; 
-    height: 58px !important; 
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 17.5px !important; 
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    min-height: 60px !important; 
     padding: 0 16px !important; 
-    border-radius: 16px !important; 
-    width: 100% !important; 
+    border-radius: 18px !important; 
+    width: calc(100% - 40px) !important; 
+    max-width: 353px !important;
+    margin-inline: auto !important;
     white-space: nowrap !important; 
   }
 
