@@ -48,10 +48,10 @@
   --mobile-page-right: 24px;
   
   /* Typography Scale */
-  --text-hero: clamp(28px, 7vw, 38px);
-  --text-section-heading: clamp(26px, 6vw, 34px);
-  --text-subheading: clamp(21px, 5vw, 26px);
-  --text-card-title: clamp(18px, 4vw, 21px);
+  --text-hero: clamp(26px, 7vw, 38px);
+  --text-section-heading: clamp(24px, 6vw, 34px);
+  --text-subheading: clamp(19px, 5vw, 26px);
+  --text-card-title: clamp(17px, 4vw, 21px);
   --text-body: 17px;
   --text-body-lead: 18px;
   --text-supporting: 15px;
@@ -10653,4 +10653,47 @@ section, #real-problem {
 .long-form-copy p.new-section,
 .long-form-copy .new-section {
   margin-top: var(--section-gap);
+}
+
+/* ==========================================================================
+   GLOBAL MOBILE TYPOGRAPHY FIT PASS (OVERRIDES)
+   ========================================================================== */
+@media (max-width: 430px) {
+  /* Hero */
+  .hero-title-line-1 { font-size: clamp(30px, 8vw, 35px) !important; line-height: 1.25 !important; }
+  .hero-title-line-2 { font-size: clamp(28px, 7.5vw, 33px) !important; line-height: 1.28 !important; }
+  
+  /* Buttons */
+  .btn-lg, .btn-primary { font-size: 17px !important; padding-left: 20px !important; padding-right: 20px !important; }
+  
+  /* Story & Specific Body Copy */
+  .story-p, .hero-mechanism-copy, .hero-mechanism-workflow { font-size: 16px !important; line-height: 1.65 !important; }
+  
+  /* Card Titles */
+  .outcome-card h3, .pain-situation-card .situation-card-title, .pain-point-card h3, .highlight-card h3, .highlight-block-card h3 { font-size: 18px !important; }
+  
+  /* Card Bodies */
+  .outcome-content p, .situation-card-desc, .pain-point-card p, .highlight-card p, .highlight-block-card p { font-size: 15.5px !important; line-height: 1.55 !important; }
+  
+  /* Section Headlines */
+  h2, .section-title, .dark-headline, .section-header h2, .pain-closing-title, .system-title, .system-headline { font-size: clamp(24px, 6.5vw, 28px) !important; }
+  h3, .sub-headline, .dark-subheadline, .system-subheadline { font-size: clamp(21px, 5.5vw, 24px) !important; }
+  
+  /* Supporting Copy */
+  .audience-sub-line, .trust-text, .hero-microcopy, .story-subtext p, .caption-sub { font-size: 15px !important; }
+}
+
+@media (max-width: 393px) {
+  .hero-title-line-1 { font-size: clamp(28px, 8vw, 33px) !important; }
+  .hero-title-line-2 { font-size: clamp(26px, 7.5vw, 31px) !important; }
+  .btn-lg, .btn-primary { font-size: 17px !important; padding-left: 18px !important; padding-right: 18px !important; }
+  .story-p, .hero-mechanism-copy { font-size: 15.5px !important; }
+}
+
+@media (max-width: 375px) {
+  .hero-title-line-1 { font-size: clamp(26px, 8vw, 31px) !important; }
+  .hero-title-line-2 { font-size: clamp(24px, 7.5vw, 29px) !important; }
+  .btn-lg, .btn-primary { font-size: 16px !important; padding-left: 16px !important; padding-right: 16px !important; }
+  .story-p, .hero-mechanism-copy { font-size: 15.5px !important; }
+  h2, .section-title, .dark-headline, .section-header h2 { font-size: clamp(23px, 6.5vw, 26px) !important; }
 }
