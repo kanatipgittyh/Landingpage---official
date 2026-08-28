@@ -1024,7 +1024,7 @@ body {
 .iphone-screen-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   display: block;
 }
@@ -2813,7 +2813,7 @@ body {
     width: 82vw;
     max-width: 290px;
     height: auto;
-    aspect-ratio: 1 / 2;
+    aspect-ratio: 9 / 19.5;
     position: relative;
     box-sizing: border-box;
     margin: 0 auto;
@@ -11292,12 +11292,54 @@ p:last-child,
 
   /* --- Hero Mobile Mockup Constraint --- */
   .iphone-container {
-    width: 82vw !important;
-    max-width: 340px !important;
-    /* Cap it comfortably */
+    width: min(72vw, 330px) !important;
     aspect-ratio: 9 / 19.5 !important;
     height: auto !important;
     margin: 0 auto !important;
+  }
+
+  .floating-badge {
+    width: 32% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    right: -5% !important;
+    top: -5% !important;
+    padding: 6% !important;
+    box-sizing: border-box !important;
+    border-radius: 50% !important;
+  }
+
+  .badge-tag {
+    font-size: clamp(8px, 2.5vw, 10px) !important;
+  }
+
+  .badge-title {
+    font-size: clamp(10px, 3vw, 12px) !important;
+  }
+
+  .badge-sub {
+    font-size: clamp(8px, 2.5vw, 10px) !important;
+  }
+
+  .hero-meta {
+    margin-bottom: 24px !important;
+    /* Reduce space below phone */
+  }
+
+  /* Fix Hero Headline Wrapping */
+  .hero-title {
+    max-width: 90vw !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-title-line-1 {
+    font-size: clamp(24px, 6vw, 32px) !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-title-line-2 {
+    font-size: clamp(22px, 5.5vw, 30px) !important;
+    line-height: 1.25 !important;
   }
 
   /* --- 2-Column Grid Equal Heights --- */
@@ -11325,17 +11367,21 @@ p:last-child,
   .nav-container {
     padding: 0 12px !important;
   }
+
   .brand-logo {
     gap: 4px !important;
   }
+
   .brand-badge {
     font-size: 8px !important;
     padding: 2px 4px !important;
   }
+
   .brand-title {
     font-size: clamp(13px, 3.8vw, 15px) !important;
     white-space: nowrap !important;
   }
+
   .nav-cta .btn-primary {
     padding: 8px 12px !important;
     font-size: clamp(12px, 3.5vw, 14px) !important;
@@ -11359,9 +11405,10 @@ p:last-child,
     justify-content: center !important;
     align-items: center !important;
   }
-  
+
   /* 4. Button Normalization */
-  .btn-primary, .btn-secondary {
+  .btn-primary,
+  .btn-secondary {
     min-height: 56px;
     display: flex;
     justify-content: center;
@@ -11378,7 +11425,7 @@ p:last-child,
     font-size: 15px !important;
     white-space: nowrap !important;
   }
-  
+
   /* 6. Fix Orphans via Max-Widths */
   .hero-sub-story,
   .reframe-p1,
@@ -11387,27 +11434,29 @@ p:last-child,
   .sys-intro-desc {
     max-width: 90vw !important;
   }
-  
+
   /* 7. Problem Cards 2-Col Grid */
   .situation-card-title {
     font-size: clamp(17px, 4.5vw, 20px) !important;
     line-height: 1.35 !important;
     margin-bottom: 8px !important;
   }
+
   .situation-card-desc {
     font-size: clamp(15px, 4.2vw, 16px) !important;
     line-height: 1.55 !important;
   }
+
   .pain-situation-card {
     padding: 18px 16px !important;
   }
-  
+
   /* 8. Guidebook / Guidemap Intro */
   .sys-intro-desc {
     font-size: 15px !important;
     line-height: 1.5 !important;
   }
-  
+
   /* 9. 4 Steps Timeline Override */
   .journey-grid {
     grid-template-columns: 1fr !important;
@@ -11415,7 +11464,7 @@ p:last-child,
     max-width: 320px !important;
     margin: 24px auto !important;
   }
-  
+
   .journey-step {
     flex-direction: column !important;
     align-items: center !important;
@@ -11432,11 +11481,12 @@ p:last-child,
     height: auto !important;
     order: 2 !important;
   }
-  
+
   .step-card .step-title {
     font-size: clamp(20px, 5vw, 24px) !important;
     margin-top: 8px !important;
   }
+
   .step-card .step-subtitle {
     font-size: clamp(16px, 4vw, 18px) !important;
     margin-bottom: 16px !important;
@@ -11452,6 +11502,7 @@ p:last-child,
     gap: 0 !important;
     order: 3 !important;
   }
+
   .connector-line {
     width: 2px !important;
     height: 20px !important;
@@ -11459,9 +11510,10 @@ p:last-child,
     opacity: 0.6 !important;
     margin: 0 !important;
   }
+
   .connector-chevron {
-    width: 0 !important; 
-    height: 0 !important; 
+    width: 0 !important;
+    height: 0 !important;
     border-left: 5px solid transparent !important;
     border-right: 5px solid transparent !important;
     border-top: 7px solid var(--primary-orange) !important;
@@ -11471,7 +11523,7 @@ p:last-child,
     margin: 0 !important;
     opacity: 0.6 !important;
   }
-  
+
   /* Last step should not have a connector if possible, but HTML structure has it inside journey-step */
   .journey-step:last-child .step-connector {
     display: none !important;
