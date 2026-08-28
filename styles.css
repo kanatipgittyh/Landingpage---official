@@ -2860,7 +2860,7 @@ body {
   }
 
   .navbar {
-    position: fixed !important;
+    position: sticky !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
@@ -2879,7 +2879,7 @@ body {
   }
 
   .brand-logo {
-    gap: 6px;
+    gap: 4px;
   }
 
   .brand-badge {
@@ -2888,7 +2888,8 @@ body {
   }
 
   .brand-title {
-    font-size: 0.95rem;
+    font-size: 0.90rem;
+    white-space: nowrap;
   }
 
   .nav-cta .btn-primary {
@@ -9709,8 +9710,8 @@ section,
 /* SECTION 1 — MOBILE HERO POLISH */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 24px 0 20px 0 !important;
-    margin-top: 58px !important;
+    padding: 48px 0 20px 0 !important;
+    margin-top: 0 !important;
   }
 
   .hero-container {
