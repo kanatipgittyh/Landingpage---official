@@ -10740,6 +10740,63 @@ section, #real-problem {
     margin-top: 26px !important;
   }
 
+  /* OUTCOMES SECTION REFINEMENTS (MOBILE ONLY) */
+  .transformation-section .section-header h2 {
+    font-size: clamp(26px, 6vw, 29px) !important;
+    line-height: 1.35 !important;
+  }
+  .transformation-section .section-header p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+  .outcomes-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .outcome-card {
+    display: grid !important;
+    grid-template-columns: 44px minmax(0, 1fr) !important;
+    column-gap: 14px !important;
+    align-items: center !important;
+    padding: 16px 18px !important;
+    border-radius: 20px !important;
+    height: auto !important;
+    min-height: auto !important;
+    text-align: left !important;
+  }
+  .outcome-check-icon {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .outcome-check-icon svg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+  .outcome-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+  .outcome-content h3 {
+    font-size: 18.5px !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+  }
+  .outcome-content p {
+    font-size: 15.5px !important;
+    line-height: 1.6 !important;
+    font-weight: 450 !important;
+    margin: 0 !important;
+    color: #475569 !important;
+  }
+
   /* Global Dimensions & Padding */
   .container { padding-left: 20px !important; padding-right: 20px !important; }
   
