@@ -10723,21 +10723,6 @@ section, #real-problem {
   .hero-proof-lead { font-size: 16px !important; line-height: 1.6 !important; margin-bottom: 8px !important; }
   .hero-proof-detail { font-size: 15.5px !important; }
 
-  /* Re-styled Product Description (Now sitting below mockup) */
-  .hero-mechanism-copy { 
-    font-size: 16.5px !important; 
-    line-height: 1.6 !important; 
-    text-align: center !important; 
-    max-width: 350px !important;
-    margin-inline: auto !important;
-    padding-inline: 20px !important;
-    color: var(--text-dark, #0F172A) !important;
-  }
-  .hero-mechanism-copy strong { 
-    font-weight: 700 !important; 
-    color: var(--primary) !important; 
-  }
-  
   /* Mobile Product Mockup */
   .hero-visual-mobile .iphone-container { 
     width: min(71vw, 280px) !important; 
@@ -10745,6 +10730,27 @@ section, #real-problem {
     aspect-ratio: 9/19.5 !important; 
   }
   .floating-badge { width: 36% !important; transform: scale(0.9) !important; transform-origin: top right; }
+
+  /* Re-styled Product Description (Now sitting below mockup) */
+  .hero-mechanism-copy { 
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    font-size: 16px !important; 
+    line-height: 1.6 !important; 
+    font-weight: 450 !important;
+    text-align: center !important; 
+    max-width: 345px !important;
+    margin-inline: auto !important;
+    padding-inline: 20px !important;
+    color: var(--text-dark, #0F172A) !important;
+    margin-bottom: 28px !important; /* Spacing to price */
+  }
+  .hero-mechanism-copy strong { 
+    font-weight: 700 !important; 
+    color: var(--primary) !important; 
+  }
+  .hero-visual-mobile { margin-bottom: 28px !important; } /* Spacing to description */
 
   /* Price Area & CTA */
   .hero-price-context { display: flex !important; flex-direction: column !important; gap: 8px !important; margin-bottom: 18px !important; }
@@ -10757,14 +10763,14 @@ section, #real-problem {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 17.5px !important; 
+    text-align: center !important;
+    font-size: 15.5px !important; 
     font-weight: 700 !important;
-    line-height: 1.25 !important;
-    min-height: 60px !important; 
-    padding: 0 16px !important; 
-    border-radius: 18px !important; 
-    width: calc(100% - 40px) !important; 
-    max-width: 353px !important;
+    line-height: 1.2 !important;
+    min-height: 54px !important; 
+    padding: 0 14px !important; 
+    border-radius: 14px !important; 
+    width: min(84vw, 335px) !important; 
     margin-inline: auto !important;
     white-space: nowrap !important; 
   }
