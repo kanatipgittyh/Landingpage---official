@@ -10797,6 +10797,50 @@ section, #real-problem {
     color: #475569 !important;
   }
 
+  /* GUIDEBOOK + GUIDEMAP COMPARISON SECTION REFINEMENTS (MOBILE ONLY) */
+  .reframe-section .container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+  .system-cards-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+  .system-card {
+    padding: 18px 16px !important;
+  }
+  .sys-card-header h3 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-top: 10px !important;
+  }
+  .sys-card-action-tag {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    margin-top: 12px !important;
+    margin-bottom: 20px !important;
+  }
+  .sys-card-desc, .desc-mobile {
+    font-size: 15.5px !important;
+    line-height: 1.6 !important;
+  }
+  
+  .system-package-mobile-line12 {
+    display: block !important;
+    font-size: 23px !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+    line-height: 1.35 !important;
+    margin-bottom: 12px !important;
+  }
+  .system-package-mobile-line3 {
+    display: block !important;
+    font-size: 16.5px !important;
+    font-weight: 600 !important;
+    color: #475569 !important;
+    line-height: 1.45 !important;
+  }
+
   /* Global Dimensions & Padding */
   .container { padding-left: 20px !important; padding-right: 20px !important; }
   
