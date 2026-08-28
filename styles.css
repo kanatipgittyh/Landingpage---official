@@ -10761,18 +10761,32 @@ section, #real-problem {
   
   .hero-actions .btn-primary { 
     display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
-    font-size: 15.5px !important; 
+    min-height: 74px !important; 
+    padding: 12px 20px !important; 
+    border-radius: 16px !important; 
+    width: min(84vw, 350px) !important; 
+    margin-inline: auto !important;
+    white-space: normal !important; 
+    gap: 4px !important;
+  }
+  .cta-text-dash { display: none !important; }
+  .cta-text-line1 {
+    display: block !important;
+    font-size: 17.5px !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
-    min-height: 54px !important; 
-    padding: 0 14px !important; 
-    border-radius: 14px !important; 
-    width: min(84vw, 335px) !important; 
-    margin-inline: auto !important;
-    white-space: nowrap !important; 
+    color: #ffffff !important;
+  }
+  .cta-text-line2 {
+    display: block !important;
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    line-height: 1.15 !important;
+    color: #ffffff !important;
   }
 
   /* Benefits List (สิ่งที่คุณจะได้รับ) */
