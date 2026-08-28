@@ -835,29 +835,44 @@
     <!-- SECTION 7 — FOUNDER STORY / HUMAN PROOF -->
     <section class="section founder-story-section" id="story">
       <div class="container">
-        <div class="founder-story-grid single-story scroll-fade-up">
+        <div class="founder-story-grid desktop-only-story scroll-fade-up">
           
-          <!-- Photo Column -->
+          <!-- Photo Column (Desktop Left) -->
           <div class="story-photo-wrap">
             <div class="story-photo-container">
               <div class="polaroid-card-frame" id="polaroidImageTrigger">
                 <img src="assets/books.png" alt="กองหนังสือที่เริ่มจากคำถามหนึ่งในลิฟต์" class="story-books-img">
               </div>
               <div class="story-photo-caption-group">
-                <p class="caption-main"><span class="caption-dot"></span>“กองหนังสือที่เริ่มจากคำถามหนึ่งในลิฟต์”</p>
-                <p class="caption-sub">หนังสืออ้างอิงในการทำ Guidebook เล่มนี้</p>
-                <!-- Mobile Hint -->
-                <p class="mobile-image-hint">แตะเพื่อดูภาพใหญ่</p>
+                <!-- Desktop Caption (Hidden on Mobile) -->
+                <div class="story-desktop-caption">
+                  <p class="caption-main"><span class="caption-dot"></span>“กองหนังสือที่เริ่มจากคำถามหนึ่งในลิฟต์”</p>
+                  <p class="caption-sub">หนังสืออ้างอิงในการทำ Guidebook เล่มนี้</p>
+                </div>
+                
+                <!-- Mobile Caption (Hidden on Desktop) -->
+                <div class="story-mobile-caption">
+                  <p class="mobile-image-hint">แตะเพื่อดูภาพใหญ่</p>
+                  <div class="story-caption-text-container">
+                    <span class="caption-dot"></span>
+                    <div class="caption-main-sub-block">
+                      <p class="caption-main">“กองหนังสือที่เริ่มจากคำถามหนึ่งในลิฟต์”</p>
+                      <p class="caption-sub">หนังสืออ้างอิงในการทำ Guidebook เล่มนี้</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Content Part 1 -->
-          <div class="story-content-part-1">
+          <!-- Content Column (Desktop Right) -->
+          <div class="story-content-wrap">
+            <!-- Eyebrow Label -->
             <div class="story-label-wrap">
               <span class="story-tag">FROM THE AUTHOR</span>
             </div>
 
+            <!-- Main Headline -->
             <div class="story-headline-wrap">
               <h2 class="story-title">
                 จุดเริ่มต้นของ Guidebook เล่มนี้<br>
@@ -865,30 +880,34 @@
               </h2>
             </div>
 
+            <!-- 1. Author Story Paragraphs -->
             <div class="story-narrative-block">
               <p class="story-p">ช่วงมหาวิทยาลัย มีคนที่ผมอยากรู้จักมาก โอกาสอยู่ตรงหน้าเมื่อเราอยู่ในลิฟต์ตัวเดียวกันสองคน แต่ผมกลับไม่กล้าแม้แต่จะทัก สุดท้ายประตูลิฟต์เปิด แล้วโอกาสนั้นก็ผ่านไป</p>
               
+              <!-- Quote Accent Block -->
               <blockquote class="story-quote-accent">
                 “ถ้าอยากรู้จักใครสักคน เราควรเริ่มยังไงกันแน่?”
               </blockquote>
 
               <p class="story-p">หลังจากวันนั้น ผมเริ่มซื้อหนังสือการสื่อสารมาศึกษา นำองค์ความรู้ด้านความสัมพันธ์และจิตวิทยามาทดลองกับบทสนทนาจริง</p>
 
+              <!-- Transition Takeaway Quote (Moved up) -->
               <blockquote class="story-quote-accent story-takeaway-quote" style="margin-top: 2rem; margin-bottom: 1rem;">
                 ผมเคยคิดว่า การได้รู้จักใครสักคนต้องรอจังหวะ<br class="hide-mobile">
                 จนได้รู้ว่า… <span class="story-takeaway-highlight">“เราสร้างจังหวะนั้นขึ้นมาเองได้”</span>
               </blockquote>
 
+              <!-- Author Identity Grouped with Quote -->
               <div class="story-author-signature" style="margin-top: 0; margin-bottom: 2.5rem;">
                 <div class="signature-name">Mark Kanatip</div>
                 <div class="signature-role">เจ้าของเพจ “แอบส่องใจคน”</div>
                 <div class="signature-book">ผู้เขียน Guidebook ชวนคุยให้รู้จักกัน</div>
               </div>
-            </div>
-          </div>
 
-          <!-- Content Part 2 -->
-          <div class="story-content-part-2">
+            </div>
+
+
+            <!-- SECTION 3 — THE PROCESS (NARRATIVE STYLE) -->
             <h2 class="story-title" style="font-size: 1.85rem; margin-top: 48px; margin-bottom: 8px; border-left: 3px solid var(--primary, #FF5E36); padding-left: 16px;">
               จากความสงสัยหนึ่งครั้ง<br>กลายเป็นการศึกษาหลายปี
             </h2>
@@ -902,6 +921,7 @@
             
             <p class="story-p" style="margin-bottom: 36px;">ทำแบบนี้ไปเรื่อย ๆ จากคำถามเล็ก ๆ ในวันนั้น กลายเป็นเรื่องที่ผมศึกษามาหลายปีแบบไม่รู้ตัวครับ</p>
 
+            <!-- Final Insight Block -->
             <div class="story-final-insight" style="margin-top: 36px; margin-bottom: 48px; padding-left: 16px; border-left: 3px solid var(--primary, #FF5E36); max-width: 540px;">
               <p style="margin: 0 0 6px 0; font-family: var(--font-body); font-size: 0.95rem; color: #64748B; font-weight: 400; line-height: 1.5;">
                 จนยิ่งศึกษา ผมก็ยิ่งเข้าใจว่า
@@ -917,6 +937,7 @@
               </p>
             </div>
 
+            <!-- SECTION 4 — VALUE SHORTCUT -->
             <div class="value-card-premium" style="margin-bottom: 3rem;">
               <div class="value-card-label" style="text-transform: none;">“สิ่งที่ผมอยากมี ในวันที่เริ่มต้น”</div>
               <div class="value-card-main">ผมใช้เวลาหลายปี<br>เพื่อให้คุณไม่ต้องเริ่มจากศูนย์เหมือนผม</div>
@@ -938,9 +959,7 @@
                 คุณสามารถเริ่มทำความเข้าใจได้<br>
                 ภายในเวลาอ่าน<span style="color: var(--primary, #FF5E36); font-weight: 700;">ไม่ถึง 1 ชั่วโมง</span>
               </div>
-            </div>            
-
-            <!-- Story Epilogue Card -->
+            </div>            <!-- Story Epilogue Card -->
             <div class="story-epilogue-card">
               <p class="epilogue-intro">อ้อ...เกือบลืมบอกไปครับ</p>
               <p class="epilogue-context">เพื่อนคนนั้นที่ผมไม่กล้าแม้แต่จะทักในลิฟต์วันนั้น</p>
@@ -957,12 +976,156 @@
               </div>
             </div>
 
-            <!-- CTA -->
+
+
+            <!-- Mobile Photo Placement Placeholder (Visible only on mobile before CTA) -->
+            <div class="story-mobile-photo-wrap"></div>
+
+            <!-- 4. Section CTA (Closes the section) -->
             <div class="story-cta-wrap">
               <a href="https://buy.stripe.com/14AdR1akj8Od2Z59d4efC03" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange open-checkout-btn">
                 รับสิ่งที่ผมคัดและเรียบเรียงไว้ให้แล้ว
               </a>
             </div>
+          </div>
+
+        </div>
+        
+        <div class="founder-story-grid mobile-only-story scroll-fade-up">
+          <div class="story-content-wrap" style="width: 100%; display: flex; flex-direction: column; align-items: center; padding-bottom: 24px;">
+            
+            <!-- 1. Eyebrow: FROM THE AUTHOR -->
+            <div class="story-label-wrap center-element" style="margin-bottom: 20px;">
+              <span class="story-tag" style="font-size: 15px; font-weight: 700; letter-spacing: 0.06em;">FROM THE AUTHOR</span>
+            </div>
+
+            <!-- 2. Main heading -->
+            <div class="story-headline-wrap center-element" style="width: 90vw; max-width: 620px; margin-bottom: 32px;">
+              <h2 class="story-title" style="font-size: clamp(30px, 5.5vw, 42px); line-height: 1.15; font-weight: 800; margin: 0;">
+                จุดเริ่มต้นของ Guidebook เล่มนี้<br>คือบทสนทนาที่ผมไม่ได้เริ่ม
+              </h2>
+            </div>
+
+            <!-- 3. Intro paragraph -->
+            <div class="story-narrative-block" style="width: 90vw; max-width: 620px; text-align: left; margin-bottom: 32px;">
+              <p class="story-p" style="font-size: clamp(17px, 2.7vw, 21px); line-height: 1.7; font-weight: 400; margin: 0;">ช่วงมหาวิทยาลัย มีคนที่ผมอยากรู้จักมาก โอกาสอยู่ตรงหน้าเมื่อเราอยู่ในลิฟต์ตัวเดียวกันสองคน แต่ผมกลับไม่กล้าแม้แต่จะทัก สุดท้ายประตูลิฟต์เปิด แล้วโอกาสนั้นก็ผ่านไป</p>
+            </div>
+
+            <!-- 4. Quote -->
+            <blockquote class="story-quote-accent center-quote" style="width: 80vw; max-width: 520px; margin: 0 auto 32px auto; font-size: clamp(20px, 3.2vw, 25px); line-height: 1.5; font-weight: 700; color: var(--primary, #FF5E36); text-align: center; border: none; padding: 0;">
+              “ถ้าอยากรู้จักใครสักคน เราควรเริ่มยังไงกันแน่?”
+            </blockquote>
+
+            <!-- 5. Paragraph -->
+            <div style="width: 90vw; max-width: 620px; text-align: left; margin-bottom: 32px;">
+              <p class="story-p" style="font-size: clamp(17px, 2.7vw, 21px); line-height: 1.7; font-weight: 400; margin: 0;">
+                หลังจากวันนั้น ผมเริ่มซื้อหนังสือการสื่อสารมาศึกษา<br>นำองค์ความรู้ด้านความสัมพันธ์และจิตวิทยามาทดลองกับบทสนทนาจริง
+              </p>
+            </div>
+
+            <!-- 6. Quote -->
+            <blockquote class="story-quote-accent center-quote story-takeaway-quote" style="width: 80vw; max-width: 520px; margin: 0 auto 32px auto; font-size: clamp(20px, 3.2vw, 25px); line-height: 1.5; font-weight: 700; text-align: center; border: none; padding: 0;">
+              ผมเคยคิดว่า การได้รู้จักใครสักคนต้องรอจังหวะ<br>
+              จนได้รู้ว่า... <span class="story-takeaway-highlight" style="font-weight: 800; color: var(--primary, #FF5E36);">“เราสร้างจังหวะนั้นขึ้นมาเองได้”</span>
+            </blockquote>
+
+            <!-- 7. Author name / identity -->
+            <div class="story-author-signature center-element" style="margin-bottom: 48px; border: none; padding-left: 0;">
+              <div class="signature-name" style="font-size: 24px; font-weight: 800; margin-bottom: 8px;">Mark Kanatip</div>
+              <div class="signature-role" style="font-size: 17px; line-height: 1.5;">เจ้าของเพจ “แอบส่องใจคน”</div>
+              <div class="signature-book" style="font-size: 17px; line-height: 1.5;">ผู้เขียน Guidebook ชวนคุยให้รู้จักกัน</div>
+            </div>
+
+            <!-- 8. Photo -->
+            <div class="story-photo-container" style="margin-bottom: 48px; width: 100%;">
+              <div class="polaroid-card-frame">
+                <img src="assets/books.png" alt="กองหนังสือที่เริ่มจากคำถามหนึ่งในลิฟต์" class="story-books-img" style="display: block; margin: 0 auto; width: 100%; max-width: 300px;">
+              </div>
+              <div class="story-mobile-caption center-element" style="margin-top: 16px;">
+                <p class="mobile-image-hint" style="margin-bottom: 6px; font-size: 14px;">แตะเพื่อดูภาพใหญ่</p>
+                <p class="caption-main" style="font-weight: 700; color: #0F172A; font-size: 16px; margin-bottom: 4px;">“กองหนังสือที่เริ่มจากคำถามหนึ่งในลิฟต์”</p>
+                <p class="caption-sub" style="color: #64748B; font-size: 14px;">หนังสืออ้างอิงในการทำ Guidebook เล่มนี้</p>
+              </div>
+            </div>
+
+            <!-- 9. New Copy Section -->
+            <div style="width: 90vw; max-width: 620px; text-align: left; margin-bottom: 32px;">
+              <h2 class="story-title" style="font-size: clamp(25px, 4.5vw, 34px); line-height: 1.2; font-weight: 800; margin-bottom: 12px; border-left: none; padding-left: 0;">
+                จากความสงสัยหนึ่งครั้ง<br>กลายเป็นการศึกษาหลายปี
+              </h2>
+              <div style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary, #FF5E36); margin-bottom: 32px; padding-left: 0;">
+                ยิ่งศึกษา ยิ่งอยากเข้าใจให้ลึกกว่าเดิม
+              </div>
+
+              <p class="story-p" style="font-size: clamp(17px, 2.7vw, 21px); font-weight: 400;">ผมเริ่มจากซื้อหนังสือเรื่องการสื่อสารมาอ่านทีละเล่มสองเล่ม อ่านไปอ่านมา จากสองเล่มก็เริ่มเป็นสิบ จากสิบก็กลายเป็นหลายสิบเล่ม... หันมาดูอีกที แทบไม่มีที่เก็บแล้วครับ 555</p>
+              <p class="story-p" style="font-size: clamp(17px, 2.7vw, 21px); font-weight: 400;">แล้วผมก็ไม่ได้หยุดอยู่แค่คำถามว่า ‘ควรจะทักยังไงดี’ จากเรื่องการสื่อสาร ผมเลยค่อย ๆ ขุดไปถึงเรื่องความสัมพันธ์ จิตวิทยา และพฤติกรรมมนุษย์</p>
+              <p class="story-p" style="font-size: clamp(17px, 2.7vw, 21px); font-weight: 400; margin-bottom: 32px;">ทำแบบนี้ไปเรื่อย ๆ จากคำถามเล็ก ๆ ในวันนั้น กลายเป็นเรื่องที่ผมศึกษามาหลายปีแบบไม่รู้ตัวครับ</p>
+
+              <!-- Final Insight Block (Mobile) -->
+              <div class="story-final-insight" style="width: 100%; max-width: 560px; margin-top: 32px; margin-bottom: 44px; padding-left: 16px; border-left: 3px solid var(--primary, #FF5E36); text-align: left; box-sizing: border-box;">
+                <p style="margin: 0 0 6px 0; font-family: var(--font-body); font-size: clamp(15px, 2.3vw, 17px); color: #64748B; font-weight: 400; line-height: 1.5;">
+                  จนยิ่งศึกษา ผมก็ยิ่งเข้าใจว่า
+                </p>
+                <p style="margin: 0 0 4px 0; font-family: var(--font-heading); font-size: clamp(18px, 3.2vw, 22px); color: #0F172A; font-weight: 600; line-height: 1.4;">
+                  Soft skill ไม่ได้ “soft” อย่างที่ชื่อบอกเลยครับ
+                </p>
+                <p style="margin: 0 0 4px 0; font-family: var(--font-heading); font-size: clamp(17px, 3vw, 20px); color: #334155; font-weight: 500; line-height: 1.4;">
+                  มันเป็นทักษะที่<span style="color: var(--primary, #FF5E36); font-weight: 700;">ต้องฝึก</span> ถึงจะเก่งขึ้นได้
+                </p>
+                <p style="margin: 0; font-family: var(--font-body); font-size: clamp(16px, 2.8vw, 19px); color: #475569; font-weight: 400; line-height: 1.4;">
+                  และข่าวดีคือ... <span style="font-weight: 700; color: #334155;">มันฝึกกันได้ครับ :)</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- 11. Card: สิ่งที่ผมอยากมีในวันที่เริ่มต้น -->
+            <div class="value-card-premium" style="margin-bottom: 36px; padding: 24px 20px; width: 90vw; max-width: 620px; box-sizing: border-box; text-align: left; background: #FFFFFF; border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 16px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);">
+              <div class="value-card-label" style="text-transform: none; text-align: left; color: var(--primary, #FF5E36); font-size: clamp(14px, 2.2vw, 15px); font-weight: 700; margin-bottom: 12px;">“สิ่งที่ผมอยากมี ในวันที่เริ่มต้น”</div>
+              <div class="value-card-main" style="font-size: clamp(20px, 3.8vw, 24px); font-weight: 800; text-align: left; margin-bottom: 20px; line-height: 1.35; color: #0F172A;">ผมใช้เวลาหลายปี<br>เพื่อให้คุณไม่ต้องเริ่มจากศูนย์เหมือนผม</div>
+              
+              <div class="value-card-support" style="text-align: left; margin-bottom: 20px; font-size: clamp(15px, 2.5vw, 17px); line-height: 1.65; color: #4B5563; font-weight: 400;">
+                คุณไม่จำเป็นต้องอ่านหนังสือทุกเล่มที่ผมอ่าน<br>
+                ไม่ต้องไล่งานวิจัยทุกชิ้น<br>
+                และไม่ต้องลองผิดลองถูกทุกอย่างด้วยตัวเอง
+              </div>
+              
+              <div class="value-card-support" style="text-align: left; font-size: clamp(15px, 2.5vw, 17px); line-height: 1.65; color: #4B5563; font-weight: 400; padding-top: 20px; border-top: 1px solid rgba(0, 0, 0, 0.06); margin-bottom: 20px;">
+                จากหนังสือหลายเล่ม และงานวิจัยด้านการสื่อสาร<br>
+                ผมคัดสิ่งที่น่าสนใจมาลองกับ <span style="color: var(--primary, #FF5E36); font-weight: 700;">‘บทสนทนาจริง’</span><br>
+                แล้วเก็บเฉพาะสิ่งที่ใช้ได้
+              </div>
+
+              <div class="value-card-highlight" style="font-weight: 400; padding-top: 20px; border-top: 1px solid rgba(0, 0, 0, 0.06); text-align: left; font-size: clamp(15px, 2.5vw, 17px); line-height: 1.6; color: #4B5563;">
+                <span style="font-weight: 600; display: block; margin-bottom: 6px; color: #0F172A;">สิ่งที่ผมใช้เวลาหลายปีค่อย ๆ เรียนรู้</span>
+                คุณสามารถเริ่มทำความเข้าใจได้<br>
+                ภายในเวลาอ่าน<span style="color: var(--primary, #FF5E36); font-weight: 700;">ไม่ถึง 1 ชั่วโมง</span>
+              </div>
+            </div>
+
+            <!-- 12. Final Story Card -->
+            <div class="story-epilogue-card" style="margin: 0 0 36px 0; padding: 24px 20px; width: 90vw; max-width: 620px; box-sizing: border-box; text-align: left;">
+              <p class="epilogue-intro" style="margin-bottom: 6px; font-size: clamp(14px, 2.2vw, 16px); color: #64748B; font-weight: 500; text-align: left;">อ้อ...เกือบลืมบอกไปครับ</p>
+              <p class="epilogue-context" style="margin-bottom: 16px; font-size: clamp(16px, 2.6vw, 18px); color: #334155; font-weight: 400; line-height: 1.55; text-align: left;">เพื่อนคนนั้นที่ผมไม่กล้าแม้แต่จะทักในลิฟต์วันนั้น</p>
+              
+              <h4 class="epilogue-highlight" style="text-align: left; font-size: clamp(18px, 3.2vw, 21px); font-weight: 700; color: #0F172A; line-height: 1.45; margin: 0 0 18px 0; padding: 0; border: none;">
+                ทุกวันนี้เราอยู่แก๊งเดียวกัน<br>
+                และเป็นเพื่อนที่สนิทกันมากครับ
+              </h4>
+
+              <div class="epilogue-reflection" style="text-align: left; font-size: clamp(15px, 2.4vw, 17px); color: #64748B; font-weight: 400; line-height: 1.5;">
+                <p style="margin: 0 0 4px 0;">พอนึกย้อนกลับไป</p>
+                <p style="margin: 0 0 4px 0;">ผมก็ยังรู้สึกดีอยู่เลยครับ</p>
+                <p style="margin: 0;">ที่วันนั้นผมตัดสินใจแก้เรื่องนี้</p>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="story-cta-wrap center-element">
+              <a href="https://buy.stripe.com/14AdR1akj8Od2Z59d4efC03" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange open-checkout-btn">
+                รับสิ่งที่ผมคิดและเรียบเรียงไว้ให้แล้ว
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

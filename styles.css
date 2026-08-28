@@ -10774,47 +10774,92 @@ section,
 }
 
 /* ==========================================================================
-   MOBILE-ONLY AUTHOR SECTION
+   MOBILE-ONLY AUTHOR SECTION (DEDUPLICATED DOM LAYOUT)
    ========================================================================== */
 @media (max-width: 768px) {
-  .desktop-only-story {
-    display: none !important;
-  }
-
-  .mobile-only-story {
+  .founder-story-grid.single-story {
     display: flex !important;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
-    width: 90vw !important;
+    width: 100% !important;
+    max-width: 100% !important;
     margin: 0 auto;
     padding-bottom: 24px;
+    gap: 0 !important;
   }
 
-  .mobile-only-story .story-content-wrap {
+  .founder-story-grid.single-story .story-photo-wrap {
+    order: 2 !important;
+    position: static !important;
     width: 100% !important;
+    max-width: 320px !important;
+    margin: 32px auto 48px auto !important;
   }
 
-  .mobile-only-story .story-p {
-    line-height: 1.65 !important;
-    margin-bottom: 20px !important;
-    text-align: left;
+  .founder-story-grid.single-story .story-content-part-1 {
+    order: 1 !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
-  .mobile-only-story .center-element {
-    text-align: center !important;
+  .founder-story-grid.single-story .story-content-part-2 {
+    order: 3 !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
-  .mobile-only-story .story-quote-accent.center-quote {
+  /* Specific mobile alignments */
+  .story-content-part-1 .story-label-wrap,
+  .story-content-part-1 .story-headline-wrap,
+  .story-content-part-1 .story-author-signature {
     text-align: center;
-    border: none;
-    padding: 0;
-    margin: 32px 0;
+    width: 90vw;
+    max-width: 620px;
+  }
+
+  .story-content-part-1 .story-narrative-block {
+    text-align: left;
+    width: 90vw;
+    max-width: 620px;
+  }
+
+  .story-content-part-1 .story-quote-accent {
+    text-align: center;
+    margin: 0 auto 32px auto;
+  }
+
+  .story-content-part-2>* {
+    width: 90vw;
+    max-width: 620px;
   }
 }
 
 @media (min-width: 769px) {
-  .mobile-only-story {
-    display: none !important;
+  .founder-story-grid.single-story {
+    grid-template-rows: auto auto;
+  }
+
+  .founder-story-grid.single-story .story-photo-wrap {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .founder-story-grid.single-story .story-content-part-1 {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .founder-story-grid.single-story .story-content-part-2 {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -11165,14 +11210,144 @@ p:last-child,
   text-align: center;
 }
 
-/* 4. Mobile Specific Paragraph Gaps */
+/* 4. Mobile Specific Paragraph Gaps & Global Typography (Final Polish Pass) */
 @media (max-width: 768px) {
 
+  /* --- Body Text --- */
   p,
   .story-p,
   .bridge-body-p,
   .reframe-p1,
-  .reframe-p2 {
-    margin-bottom: 18px !important;
+  .reframe-p2,
+  .value-card-support,
+  .accordion-body p,
+  .chat-text,
+  .epilogue-context,
+  .epilogue-reflection {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+  }
+
+  p:last-child,
+  .story-p:last-child,
+  .value-card-support:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* --- Small Supporting Text --- */
+  .caption-sub,
+  .mobile-image-hint,
+  .chat-name,
+  .chat-date,
+  .value-card-label {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* --- Section Eyebrows --- */
+  .section-tag,
+  .story-tag {
+    font-size: 14px !important;
+    letter-spacing: 0.08em !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* --- Section Headlines --- */
+  h2,
+  .section-title,
+  .story-title {
+    font-size: clamp(28px, 7.5vw, 36px) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* --- Card Titles --- */
+  .value-card-main,
+  .step-title,
+  .epilogue-highlight {
+    font-size: clamp(20px, 5vw, 24px) !important;
+    line-height: 1.35 !important;
+  }
+
+  /* --- Global Section Spacing --- */
+  .section,
+  .founder-story-section,
+  .contents-section,
+  .reviews-section,
+  .reviews-section-chat,
+  .faq-section {
+    padding: 80px 0 !important;
+  }
+
+  /* --- Global Horizontal Padding --- */
+  .container,
+  .container-sm,
+  .container-md {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+  /* --- Hero Mobile Mockup Constraint --- */
+  .iphone-container {
+    width: 82vw !important;
+    max-width: 340px !important;
+    /* Cap it comfortably */
+    aspect-ratio: 9 / 19.5 !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+  /* --- 2-Column Grid Equal Heights --- */
+  .outcomes-grid,
+  .system-cards-grid,
+  .journey-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+  }
+
+  .outcome-card,
+  .system-card,
+  .journey-step {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    box-sizing: border-box !important;
+  }
+
+  /* --- FAQ Spacing --- */
+  .accordion-button {
+    padding: 16px 20px !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    padding-bottom: 12px !important;
+  }
+
+  .accordion-body {
+    padding: 0 20px 20px 20px !important;
+  }
+
+  /* --- Pricing Dominance --- */
+  .pricing-main-price {
+    font-size: clamp(38px, 9vw, 46px) !important;
+    margin-bottom: 4px !important;
+  }
+
+  .pricing-original-price {
+    font-size: 18px !important;
+  }
+
+  .buy-btn-pricing {
+    padding: 18px 24px !important;
+    font-size: 18px !important;
+    min-height: 56px !important;
+    height: auto !important;
+    white-space: normal !important;
+    /* Let long text wrap */
   }
 }
