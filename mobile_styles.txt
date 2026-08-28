@@ -1,0 +1,1772 @@
+--- Block 0 ---
+
+  .hero-title-line-1 {
+    font-size: 1.50rem;
+    line-height: 1.28;
+  }
+  .hero-title-line-2 {
+    font-size: 1.60rem;
+    line-height: 1.30;
+    margin-top: 2px;
+  }
+  .hero-mechanism-copy {
+    font-size: 0.92rem;
+  }
+  .hero-microcopy {
+    font-size: 0.78rem;
+  }
+  .emotional-closer-section {
+    padding: 32px 0 24px 0;
+  }
+  .closer-lead {
+    font-size: 0.92rem;
+  }
+  .closer-main {
+    font-size: 1.28rem;
+  }
+--- Block 1 ---
+
+  .hide-mobile {
+    display: none;
+  }
+--- Block 2 ---
+
+  .pain-points-section {
+    padding: 70px 0;
+  }
+  .pain-points-header {
+    margin-bottom: 40px;
+  }
+  .pain-points-title {
+    font-size: 36px;
+  }
+  .pain-points-subtitle {
+    font-size: 18px;
+  }
+  .pain-points-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .pain-point-card {
+    padding: 32px 26px;
+  }
+  .pain-point-card h3 {
+    font-size: 21px;
+  }
+  .pain-point-card p {
+    font-size: 16px;
+  }
+  .pain-points-footer {
+    margin-top: 50px;
+  }
+  .pp-footer-title {
+    font-size: 24px;
+  }
+  .pp-footer-subtitle {
+    font-size: 17px;
+  }
+--- Block 3 ---
+
+  .results-section {
+    padding: 60px 0 70px;
+  }
+  .results-section .section-header h2 {
+    font-size: 32px;
+  }
+  .results-section .section-header p {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+  .results-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .result-card {
+    padding: 30px 24px;
+  }
+  .result-icon-box {
+    margin-bottom: 18px;
+  }
+  .result-text h3 {
+    font-size: 19px;
+  }
+--- Block 4 ---
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+--- Block 5 ---
+
+  .credibility-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .summary-box {
+    padding: 40px 24px;
+  }
+  
+  .summary-box-title {
+    font-size: 1.4rem;
+  }
+--- Block 6 ---
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .favorite-quote {
+    font-size: 1.4rem;
+  }
+--- Block 7 ---
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 20px;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    display: contents;
+  }
+
+  .hero-title {
+    order: 1;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .hero-title-line-1 { font-size: 1.70rem; line-height: 1.25; }
+  .hero-title-line-2 { font-size: 1.62rem; line-height: 1.28; margin-top: 4px; }
+
+  .hero-audience-card {
+    order: 2;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px 18px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .audience-main-line {
+    font-size: 0.94rem;
+    line-height: 1.38;
+  }
+
+  .audience-sub-line {
+    font-size: 0.84rem;
+    line-height: 1.38;
+  }
+
+  .hero-description {
+    order: 3;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .hero-mechanism-copy {
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+  .hero-visual {
+    order: 5;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .iphone-container {
+    width: 82vw;
+    max-width: 290px;
+    height: auto;
+    aspect-ratio: 1 / 2;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .floating-badge {
+    position: absolute;
+    top: -10px;
+    right: -4px;
+    width: 84px;
+    height: 84px;
+    padding: 6px;
+    z-index: 20;
+    box-sizing: border-box;
+  }
+
+  .badge-title { font-size: 0.72rem; line-height: 1.15; }
+  .badge-tag { font-size: 0.52rem; }
+  .badge-sub { font-size: 0.48rem; }
+
+  .hero-offer-group {
+    order: 4;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+  }
+
+  .hero-meta,
+  .hero-meta-section {
+    order: 6;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    padding: 10px 0;
+    background: rgba(250, 249, 246, 0.96) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+  }
+  .navbar.scrolled {
+    padding: 8px 0;
+    background: rgba(250, 249, 246, 0.98) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+  }
+  .brand-logo {
+    gap: 6px;
+  }
+  .brand-badge {
+    font-size: 8px;
+    padding: 2px 5px;
+  }
+  .brand-title {
+    font-size: 0.95rem;
+  }
+  .nav-cta .btn-primary {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+  .hero-title-line-1 { font-size: 1.70rem; line-height: 1.25; }
+  .hero-title-line-2 { font-size: 1.80rem; line-height: 1.28; margin-top: 4px; }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+--- Block 8 ---
+
+  .intermediate-quote-text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+--- Block 9 ---
+
+  .chat-msg-card {
+    padding: 18px 20px;
+    gap: 14px;
+  }
+  .chat-circle-avatar {
+    width: 48px;
+    height: 48px;
+  }
+  .chat-text {
+    font-size: 1.05rem;
+  }
+  .chat-text.lg {
+    font-size: 1.2rem;
+  }
+--- Block 10 ---
+
+  .final-close-headline {
+    font-size: 2.2rem;
+  }
+  .price-hero-num {
+    font-size: 4.2rem;
+  }
+  .btn-apple-hero {
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 1.15rem;
+  }
+--- Block 11 ---
+
+  .narrative-situation {
+    font-size: 1.5rem;
+    line-height: 1.55;
+  }
+--- Block 12 ---
+
+  .narrative-intro-thoughts {
+    font-size: 1.15rem;
+    margin: 22px 0 14px 0;
+    line-height: 1.5;
+  }
+--- Block 13 ---
+
+  .reframe-message-wrap {
+    margin-top: 24px;
+    padding-top: 18px;
+  }
+  .reframe-p1, .reframe-p2 {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+  }
+  .reframe-p1 .reframe-highlight-slate,
+  .reframe-p2 .reframe-bold-line {
+    font-size: 1.15rem;
+  }
+  .reframe-sequence-flow {
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px 14px;
+    margin: 22px auto;
+  }
+  .flow-group {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .flow-arrow {
+    transform: rotate(90deg);
+    margin: 2px 0;
+  }
+  .flow-step {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .reframe-p3 {
+    font-size: 1.0rem;
+  }
+  .reframe-p3 .reframe-key-accent {
+    font-size: 1.25rem;
+  }
+  .reframe-bridge {
+    font-size: 1.0rem;
+    line-height: 1.55;
+    margin-top: 24px;
+    padding-top: 16px;
+  }
+--- Block 14 ---
+
+  .inaction-section {
+    padding: 28px 0 18px 0;
+  }
+  .inaction-pause-block {
+    padding: 20px 16px;
+    border-radius: 10px;
+  }
+  .inaction-line-1 {
+    font-size: 0.88rem;
+  }
+  .inaction-line-2 {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+  }
+  .inaction-line-3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+  .inaction-line-4 {
+    font-size: 0.88rem;
+  }
+  .inaction-line-5 {
+    font-size: 1.02rem;
+  }
+--- Block 15 ---
+
+  .bridge-greeting-section {
+    padding: 26px 0 22px 0;
+  }
+  .bridge-eyebrow-wrap {
+    margin-bottom: 6px;
+  }
+  .bridge-title {
+    font-size: 1.32rem;
+    line-height: 1.36;
+    margin-bottom: 16px;
+  }
+  .bridge-transform-flow {
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+  .flow-pill-step {
+    font-size: 0.78rem;
+    padding: 3px 10px;
+  }
+  .bridge-body-block {
+    margin-bottom: 18px;
+  }
+  .bridge-body-p {
+    font-size: 0.94rem;
+    line-height: 1.55;
+  }
+  .bridge-closing-intro {
+    font-size: 0.90rem;
+  }
+  .bridge-closing-punchline {
+    font-size: 1.15rem;
+  }
+--- Block 16 ---
+
+  .pain-narrative-card {
+    padding: 32px 20px;
+    border-radius: 18px;
+  }
+  .pain-header-title { font-size: 1.10rem; }
+  .pain-header-subtitle { font-size: 0.95rem; margin-bottom: 18px; }
+  .pain-thought-hero { font-size: 1.70rem; margin-bottom: 18px; }
+  .pain-punchline { font-size: 1.15rem; margin-bottom: 14px; }
+  .pain-sub-line { font-size: 0.92rem; }
+--- Block 17 ---
+
+  .pain-grid-section {
+    padding: 0 0 36px 0;
+  }
+  .pain-situations-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px 10px !important;
+    margin-bottom: 24px !important;
+  }
+  .pain-situation-card {
+    padding: 14px 12px !important;
+    border-radius: 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    box-sizing: border-box !important;
+  }
+  .situation-icon-box {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+  }
+  .situation-icon-img {
+    width: 38px !important;
+    height: 38px !important;
+  }
+  .situation-card-title {
+    font-size: 0.94rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 4px !important;
+    font-weight: 700 !important;
+  }
+  .situation-card-desc {
+    font-size: 0.78rem !important;
+    line-height: 1.55 !important;
+  }
+  .pain-closing-lead {
+    font-size: 0.95rem;
+  }
+  .pain-closing-title {
+    font-size: 1.20rem;
+    margin-bottom: 0;
+  }
+--- Block 18 ---
+
+  .rp-philosophy-block {
+    margin-top: 22px;
+    padding-top: 16px;
+  }
+  .philosophy-thought-1 {
+    font-size: 0.90rem;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+  .philosophy-thought-2 {
+    font-size: 1.10rem;
+    line-height: 1.4;
+  }
+--- Block 19 ---
+
+  .fit-section .section-header {
+    margin-bottom: 24px;
+  }
+  .fit-bullet-list {
+    gap: 16px;
+  }
+  .fit-bullet-list li {
+    font-size: 1.0rem;
+    gap: 10px;
+    line-height: 1.5;
+  }
+  .mobile-only-br {
+    display: inline;
+  }
+  .fit-dot-marker {
+    width: 6px;
+    height: 6px;
+    min-width: 6px;
+    margin-top: 8px;
+  }
+  .fit-closing-statement {
+    margin-top: 28px;
+    padding: 0 16px;
+  }
+  .fit-closing-lead {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+  .fit-closing-accent {
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+  .fit-closing-accent .fit-emphasis {
+    margin-top: 4px;
+  }
+  .fit-differentiator {
+    margin-top: 32px;
+  }
+  .diff-block-not {
+    font-size: 1rem;
+    line-height: 1.45;
+    margin-bottom: 22px;
+  }
+  .diff-block-is {
+    font-size: 1.15rem;
+    line-height: 1.45;
+  }
+  .fit-quote-box {
+    padding: 16px 20px;
+    border-radius: 0 12px 12px 0;
+    margin: 32px auto 36px auto;
+  }
+  .f-quote-line-1,
+  .f-quote-line-3 {
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+  .f-quote-line-2 {
+    font-size: 1.12rem;
+    line-height: 1.4;
+  }
+  .fit-btn {
+    font-size: 0.96rem !important;
+    padding: 12px 24px !important;
+  }
+--- Block 20 ---
+
+  .journey-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  .journey-grid::before {
+    display: none !important;
+  }
+
+  .journey-step {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .journey-step .step-badge-wrap::after {
+    display: none !important;
+  }
+--- Block 21 ---
+
+  .review-quotes-grid {
+    grid-template-columns: 1fr;
+  }
+--- Block 22 ---
+
+  .story-quote-accent {
+    font-size: 1.12rem;
+    padding-left: 14px;
+    margin: 18px 0;
+  }
+  .story-takeaway-quote {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+--- Block 23 ---
+
+  .story-epilogue-card {
+    padding: 20px 20px;
+    border-radius: 16px;
+    margin: 20px 0 24px 0;
+  }
+  .epilogue-intro { font-size: 0.86rem; }
+  .epilogue-context { font-size: 0.95rem; }
+  .epilogue-highlight { font-size: 1.10rem; }
+  .epilogue-reflection p { font-size: 0.88rem; }
+--- Block 24 ---
+
+  .faq-cta-wrap {
+    margin-top: 28px;
+  }
+  .btn-faq-glow {
+    font-size: 0.95rem;
+    padding: 0 24px;
+    height: 48px;
+    border-radius: 14px;
+  }
+--- Block 25 ---
+
+  .section {
+    padding: 42px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 24px;
+  }
+
+  .section-header h2,
+  .real-problem-title,
+  .system-main-title,
+  .guidemap-showcase-section .dark-headline,
+  .story-title,
+  .final-close-headline {
+    font-size: 1.6rem;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    text-wrap: balance;
+  }
+
+  .section-header p,
+  .system-subtitle,
+  .guidemap-showcase-section .dark-subheadline,
+  .final-close-subheadline {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .hero-section {
+    padding: 40px 0 32px;
+  }
+
+  .pain-story-section {
+    padding: 38px 0 32px;
+  }
+  .editorial-narrative-box {
+    padding: 24px 18px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+  }
+  .real-problem-card {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+  .fit-section {
+    padding: 38px 0 36px;
+  }
+  .fit-checklist-wrap {
+    padding: 20px 18px;
+    margin-bottom: 18px;
+  }
+  .reframe-section,
+  .transformation-section,
+  .framework-comparison-section,
+  .contents-section,
+  .founder-story-section,
+  .reviews-section-chat,
+  .faq-section {
+    padding: 40px 0;
+  }
+  .review-notice-banner {
+    margin: 0 auto 22px;
+  }
+  .guidemap-showcase-section {
+    padding: 44px 0 40px;
+  }
+  .final-close-section {
+    padding: 42px 0 48px;
+  }
+  .reframe-headline {
+    font-size: 1.65rem;
+    line-height: 1.35;
+  }
+  .narrative-quote {
+    font-size: 1.65rem;
+    line-height: 1.35;
+  }
+  .final-headline-text {
+    font-size: 1.85rem;
+    line-height: 1.35;
+  }
+--- Block 26 ---
+
+  .guidemap-preview-window {
+    height: 420px;
+  }
+--- Block 27 ---
+
+  .guidemap-showcase-section {
+    padding: 44px 0 40px;
+  }
+  
+  .guidemap-showcase-section .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  .guidemap-showcase-section .dark-headline {
+    font-size: 1.5rem;
+    line-height: 1.35;
+  }
+
+  .visual-equation {
+    display: inline-flex !important;
+    gap: 12px !important;
+    padding: 12px 16px !important;
+    border-radius: 12px !important;
+    margin-top: 20px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+  }
+
+  .eq-part {
+    gap: 2px !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .eq-title {
+    font-size: 0.8rem !important;
+    white-space: nowrap !important;
+  }
+
+  .eq-title.text-orange {
+    font-size: 0.85rem !important;
+    white-space: nowrap !important;
+  }
+
+  .eq-desc {
+    font-size: 0.68rem !important;
+    white-space: nowrap !important;
+  }
+
+  .eq-operator {
+    font-size: 1.1rem !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .guidemaps-showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .showcase-card {
+    padding: 14px 10px;
+    gap: 12px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .showcase-top {
+    min-height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .situation-label {
+    font-size: 0.72rem;
+    line-height: 1.25;
+    margin-bottom: 4px;
+    min-height: 28px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .showcase-title {
+    font-size: 1.02rem;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+
+  .guidemap-preview-window {
+    height: 230px;
+    padding: 6px 6px 0 6px;
+    border-radius: 10px;
+  }
+
+  .guidemap-preview-label {
+    font-size: 8.5px;
+    margin-bottom: 4px;
+    letter-spacing: 0.02em;
+  }
+
+  .guidemap-img-wrapper {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .guidemap-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .guidemap-fade-gradient {
+    height: 60px;
+  }
+
+  .guidemap-microcopy {
+    font-size: 8.5px;
+    bottom: 4px;
+  }
+
+  .hover-content {
+    padding: 6px 10px;
+    gap: 4px;
+    font-size: 10px;
+  }
+  
+  .hover-eye-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .outcome-box {
+    padding: 10px 6px;
+    border-radius: 8px;
+  }
+
+  .outcome-highlight {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+    line-height: 1.25;
+  }
+
+  .outcome-desc {
+    font-size: 0.72rem;
+    line-height: 1.35;
+  }
+  
+  .showcase-value-prop {
+    margin-top: 32px;
+  }
+  
+  .value-prop-main {
+    font-size: 1.12rem;
+    line-height: 1.4;
+  }
+  
+  .system-connection-wrap {
+    margin-top: 40px;
+  }
+  
+  .system-connection-wrap .connection-headline {
+    font-size: 1.25rem;
+  }
+  
+  .desktop-text-only {
+    display: none;
+  }
+  
+  .mobile-text-only {
+    display: inline;
+  }
+--- Block 28 ---
+
+  .final-close-section {
+    padding: 42px 0 48px;
+  }
+  .final-close-headline {
+    font-size: 1.8rem;
+  }
+  .final-close-subheadline {
+    font-size: 1.1rem;
+  }
+  .final-close-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Reduced gap to bring pricing closer */
+    text-align: center;
+  }
+  .final-close-flat-cover-wrap {
+    max-width: 180px; /* Reduced size for mobile so it doesn't take too much height */
+    margin: 0 auto;
+  }
+  .final-close-right {
+    align-items: center;
+  }
+  .final-price-group {
+    align-items: center;
+    text-align: center;
+  }
+  .final-scarcity-group {
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+  .final-scarcity-lead {
+    font-size: 0.95rem;
+  }
+  .final-scarcity-sub {
+    font-size: 0.85rem;
+  }
+  .final-price-subtext {
+    text-align: center;
+    font-size: 0.94rem;
+    margin-bottom: 12px;
+  }
+  .final-close-checklist {
+    align-items: flex-start;
+  }
+  .final-close-microcopy {
+    text-align: center;
+  }
+  .final-close-cta-btn {
+    max-width: 100%;
+    width: 100%;
+  }
+--- Block 29 ---
+
+  .preview-zone {
+    padding-top: 24px;
+  }
+--- Block 30 ---
+
+  .modal-preview-dialog {
+    width: 96%;
+    max-height: 96vh;
+    margin: auto;
+  }
+  
+  .book-preview-body {
+    padding: 12px;
+  }
+  
+  .preview-image-container {
+    max-height: 65vh;
+    padding: 8px;
+  }
+  
+  .preview-page-img {
+    max-height: 60vh;
+  }
+  
+  .preview-nav-container {
+    margin-top: 12px;
+    max-width: 100%;
+  }
+
+  .preview-nav-text-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+--- Block 31 ---
+
+  .guidemap-modal-dialog {
+    width: calc(100vw - 32px);
+    max-height: 75vh;
+  }
+--- Block 32 ---
+
+  .desktop-br {
+    display: none;
+  }
+  
+  .mobile-sticky-cta {
+    display: none !important;
+  }
+  
+  .mobile-sticky-cta.hide-cta {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .final-recap-text {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+--- Block 33 ---
+
+  .toc-preview-block {
+    margin-top: 40px;
+    margin-bottom: 36px;
+  }
+  
+  .toc-header {
+    margin-bottom: 18px;
+  }
+  
+  .toc-title {
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+  }
+
+  .toc-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .toc-images-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    max-width: 94vw;
+    margin: 0 auto;
+    align-items: start;
+  }
+  
+  .toc-img-wrapper {
+    width: 100%;
+    border-radius: 12px;
+  }
+--- Block 34 ---
+
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  .nav-cta-text-desktop {
+    display: none !important;
+  }
+
+  .nav-cta-text-mobile {
+    display: inline !important;
+    white-space: nowrap !important;
+  }
+
+  .mobile-only-br {
+    display: inline !important;
+  }
+
+  .container, 
+  .container-sm, 
+  .container-md {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+  }
+--- Block 35 ---
+
+  .hero-section {
+    padding: 24px 0 20px 0 !important;
+    margin-top: 58px !important;
+  }
+
+  .hero-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding-inline: 20px !important;
+  }
+
+  .hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* Header CTA Mobile Single Label Fix */
+  .nav-cta .btn {
+    padding: 6px 14px !important;
+    font-size: 0.84rem !important;
+    white-space: nowrap !important;
+  }
+
+  /* Hero Headline Mobile Line Breaks & Hierarchy */
+  .hero-title {
+    order: 1 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero-title .mobile-only-br {
+    display: none !important;
+  }
+
+  .hero-title-line-1 {
+    font-size: 1.62rem !important;
+    line-height: 1.30 !important;
+    display: block !important;
+  }
+
+  .hero-title-line-2 {
+    font-size: 1.52rem !important;
+    line-height: 1.32 !important;
+    margin-top: 4px !important;
+    display: block !important;
+  }
+
+  .highlight-gla-roem {
+    font-size: 0.95em !important;
+  }
+
+  .highlight-pai-tor {
+    font-size: 0.95em !important;
+  }
+
+  /* Audience Card Mobile */
+  .hero-audience-card {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px 16px !important;
+    margin-bottom: 18px !important;
+    border-radius: 14px !important;
+  }
+
+  .audience-main-line {
+    font-size: 0.90rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .audience-sub-line {
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Body Copy Mobile */
+  .hero-description {
+    order: 3 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero-mechanism-copy {
+    font-size: 0.92rem !important;
+    line-height: 1.60 !important;
+  }
+
+  /* Outcome highlight */
+  .hero-outcome-highlight {
+    margin-top: 20px !important;
+  }
+  .hero-outcome-text {
+    font-size: 1.0rem !important;
+  }
+
+  /* Deliverables List: Default Stack on Tablets */
+  .hero-meta,
+  .hero-meta-section {
+    order: 6 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-top: 16px !important;
+  }
+
+  .hero-meta-pill {
+    font-size: 0.72rem !important;
+    padding: 5px 12px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .hero-meta-vertical-list {
+    gap: 20px !important;
+  }
+
+  .hero-meta-row {
+    gap: 15px !important;
+  }
+
+  .hero-meta-icon-col {
+    width: 28px !important;
+  }
+
+  .hero-meta-icon-col svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .hero-meta-text-col {
+    font-size: 0.98rem !important;
+  }
+
+  .hero-visual-desktop {
+    display: none !important;
+  }
+
+  /* Mockup Placement Mobile: Default Stack on Tablets */
+  .hero-visual-mobile {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 24px 0 !important;
+    width: 100% !important;
+    order: 4 !important;
+  }
+
+  .iphone-container {
+    width: 82vw !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+
+  .floating-badge {
+    width: 84px !important;
+    height: 84px !important;
+    right: -4px !important;
+    top: -10px !important;
+  }
+  .badge-title { font-size: 0.72rem !important; }
+  .badge-tag { font-size: 0.52rem !important; }
+  .badge-sub { font-size: 0.48rem !important; }
+
+  /* Row 5: Offer & Price Context Mobile */
+  .hero-offer-group {
+    order: 5 !important;
+    margin-bottom: 18px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .hero-price-context {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .hero-price-anchor {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+
+  .hero-price-strike {
+    font-size: 0.84rem !important;
+  }
+
+  .hero-price-scarcity {
+    font-size: 0.72rem !important;
+    padding: 2px 7px !important;
+  }
+
+  .hero-price-subtext {
+    font-size: 0.78rem !important;
+  }
+
+  #buyHeroBtn {
+    width: 100% !important;
+    max-width: 100% !important; /* full-width on mobile container */
+    font-size: 0.96rem !important;
+    height: 50px !important;
+    padding: 0 18px !important;
+    border-radius: 14px !important;
+    margin: 0 auto !important;
+  }
+--- Block 36 ---
+
+  .transformation-section {
+    padding: 40px 0 32px 0 !important;
+  }
+
+  .outcomes-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px 10px !important;
+    margin-top: 24px !important;
+    width: 100% !important;
+  }
+
+  .outcome-card {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 14px 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin-bottom: 0 !important;
+    border-radius: 16px !important;
+    background: #FAF9F6 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .outcome-check-icon {
+    width: 28px !important;
+    height: 28px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .outcome-check-icon svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .outcome-content h3 {
+    font-size: 0.94rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .outcome-content p {
+    font-size: 0.78rem !important;
+    line-height: 1.55 !important;
+  }
+--- Block 37 ---
+
+  .contents-section {
+    padding: 40px 0 32px 0 !important;
+  }
+
+  .journey-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    margin-top: 24px !important;
+    width: 92vw !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .journey-grid::before {
+    display: none !important;
+  }
+
+  .journey-step {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .step-badge-wrap {
+    display: none !important;
+  }
+
+  .step-connector {
+    display: none !important;
+  }
+
+  .step-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+    padding: 16px !important;
+    border-radius: 18px !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02) !important;
+  }
+
+  .step-card .step-label {
+    display: none !important;
+  }
+
+  .step-card .mobile-step-number {
+    display: block !important;
+    color: var(--primary) !important;
+    font-family: var(--font-heading) !important;
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .step-card .step-title {
+    font-size: 18px !important;
+    color: var(--text-dark) !important;
+    font-weight: 700 !important;
+    margin-top: 0 !important;
+    margin-bottom: 4px !important;
+    line-height: 1.3 !important;
+    text-align: left !important;
+  }
+
+  .step-card .step-subtitle {
+    font-size: 14px !important;
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.3 !important;
+    text-align: left !important;
+  }
+
+  .step-card .card-divider {
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background-color: rgba(0, 0, 0, 0.08) !important;
+    margin: 12px 0 !important;
+    border: none !important;
+  }
+
+  .step-card .preview-zone {
+    width: 100% !important;
+    display: block !important;
+    margin-top: auto !important;
+    padding-top: 0 !important;
+  }
+
+  .step-card .step-preview-btn {
+    display: flex !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 6px 10px !important;
+    border-radius: 20px !important;
+    font-size: 13px !important;
+    border: 1.5px solid var(--primary) !important;
+    background-color: var(--primary-light) !important;
+    color: var(--primary) !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    margin: 0 !important;
+  }
+
+  .step-card .preview-btn-icon {
+    display: none !important;
+  }
+
+  .journey-step .step-badge-wrap::after,
+  .journey-step:nth-child(n) .step-badge-wrap::after {
+    display: none !important;
+  }
+--- Block 38 ---
+
+  .founder-story-section {
+    padding: 40px 0 32px 0 !important;
+  }
+
+  .founder-story-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .story-content-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    order: 1 !important;
+  }
+
+  .story-headline-wrap .story-title {
+    font-size: 1.50rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .story-narrative-block {
+    margin-bottom: 0 !important;
+    width: 100% !important;
+  }
+
+  .story-quote-accent {
+    font-size: 1.10rem !important;
+    padding-left: 14px !important;
+    margin: 16px 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .story-method-note {
+    margin: 0 !important;
+    padding: 14px 16px !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .story-epilogue-card {
+    margin: 0 !important;
+    padding: 18px 18px !important;
+    border-radius: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .story-author-signature {
+    margin-bottom: 4px !important;
+    width: 100% !important;
+  }
+
+  .story-cta-wrap {
+    margin-top: 4px !important;
+    margin-bottom: 8px !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .story-cta-wrap .btn-outline-orange {
+    width: 100% !important;
+    max-width: 420px !important;
+    padding: 0 20px !important;
+    font-size: 0.95rem !important;
+    height: 48px !important;
+  }
+
+  .story-photo-wrap {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 16px auto 0 auto !important;
+    position: static !important;
+  }
+
+  .story-desktop-caption {
+    display: none !important;
+  }
+
+  .story-mobile-caption {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .story-mobile-caption .mobile-image-hint {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 12px !important; /* 10-14px distance from image card */
+    margin-bottom: 0 !important;
+    color: #A0A0A0 !important; /* light gray helper text */
+    font-size: 0.75rem !important; /* small size */
+    font-family: var(--font-body) !important;
+  }
+
+  .story-mobile-caption .story-caption-text-container {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important; /* distance between dot and title text */
+    width: 100% !important;
+    max-width: 320px !important; /* width close to the image card (340px) */
+    margin: 22px auto 0 auto !important; /* 20-24px distance below hint, centered */
+    padding: 0 10px !important; /* slight padding to ensure it fits beautifully */
+    box-sizing: border-box !important;
+  }
+
+  .story-mobile-caption .caption-dot {
+    width: 6px !important;
+    height: 6px !important;
+    background-color: var(--primary) !important; /* orange dot */
+    border-radius: 50% !important;
+    flex-shrink: 0 !important;
+    margin-top: 6px !important; /* align dot vertically with first line of title */
+  }
+
+  .story-mobile-caption .caption-main-sub-block {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important; /* 6-8px space between title and subtitle */
+    flex-grow: 1 !important;
+  }
+
+  .story-mobile-caption .caption-main {
+    font-size: 0.94rem !important;
+    color: var(--text-dark) !important; /* dark/black */
+    font-weight: 600 !important; /* same font-weight */
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .story-mobile-caption .caption-sub {
+    font-size: 0.82rem !important;
+    color: var(--text-muted) !important; /* gray */
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    padding-left: 0 !important; /* starts exactly under caption-main text */
+    text-align: left !important;
+  }
+--- Block 39 ---
+
+  .process-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .filter-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .filter-row-arrow {
+    transform: rotate(90deg);
+    margin: 4px 0;
+  }
+--- Block 40 ---
+
+  .hero-meta {
+    max-width: 100% !important;
+  }
+  
+  .hero-meta-mid-row,
+  .hero-meta-bot-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* gap 14-18px on mobile */
+    margin-bottom: 0;
+  }
+  
+  .hero-meta-mid-row {
+    margin-bottom: 16px;
+  }
+
+  .hero-meta-lead {
+    margin-bottom: 16px;
+  }
+--- Block 41 ---
+
+  .hero-outcome-highlight {
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  .hero-outcome-text {
+    font-size: 1.02rem;
+  }
+--- Block 42 ---
+
+  /* 1. MAIN HEADLINE */
+  .hero-title-line-1 {
+    font-size: clamp(34px, 6.2vw, 56px) !important;
+    line-height: 1.12 !important;
+    font-weight: 900 !important;
+  }
+  .hero-title-line-2 {
+    font-size: clamp(34px, 6.2vw, 56px) !important;
+    line-height: 1.12 !important;
+    font-weight: 800 !important;
+  }
+
+  /* 2. AUDIENCE BOX */
+  .audience-main-line {
+    font-size: clamp(17px, 2.6vw, 24px) !important;
+  }
+  .audience-sub-line {
+    font-size: clamp(14px, 2.1vw, 19px) !important;
+  }
+
+  /* 3. PRODUCT DESCRIPTION */
+  .hero-mechanism-copy {
+    font-size: clamp(15px, 2.2vw, 20px) !important;
+    line-height: 1.6 !important;
+  }
+
+  /* 4. OUTCOME HIGHLIGHT */
+  .hero-outcome-text {
+    font-size: clamp(18px, 2.7vw, 24px) !important;
+    font-weight: 800 !important;
+  }
+
+  /* 5. PRODUCT MOCKUP */
+  .iphone-container {
+    width: clamp(300px, 56vw, 460px) !important;
+    margin: 0 auto !important;
+  }
+
+  /* 6. PRICING + CTA */
+  .hero-price-strike,
+  .hero-price-scarcity,
+  .hero-price-subtext {
+    font-size: clamp(14px, 2vw, 18px) !important;
+  }
+  
+  #buyHeroBtn {
+    font-size: clamp(18px, 2.8vw, 24px) !important;
+    font-weight: 800 !important;
+  }
+
+  /* 7. BENEFITS LIST */
+  .hero-meta-pill {
+    font-size: clamp(15px, 2.2vw, 19px) !important;
+  }
+  .hero-meta-text-col {
+    font-size: clamp(16px, 2.4vw, 21px) !important;
+  }
+  .meta-icon-primary {
+    width: clamp(24px, 4vw, 30px) !important;
+    height: clamp(24px, 4vw, 30px) !important;
+  }
+
+  /* 8. SPACING RHYTHM */
+  .hero-container {
+    gap: clamp(24px, 4vw, 48px) !important;
+  }
+  
+  .hero-title {
+    margin-bottom: clamp(20px, 3vw, 36px) !important;
+  }
+  
+  .hero-audience-card {
+    margin-bottom: clamp(24px, 4vw, 44px) !important;
+  }
+  
+  .hero-outcome-highlight {
+    margin-top: clamp(18px, 3vw, 32px) !important;
+  }
+  
+  .hero-description {
+    margin-bottom: clamp(28px, 5vw, 56px) !important;
+  }
+--- Block 43 ---
+
+  .desktop-only-story {
+    display: none !important;
+  }
+  .mobile-only-story {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw !important;
+    margin: 0 auto;
+    padding-bottom: 24px;
+  }
+  .mobile-only-story .story-content-wrap {
+    width: 100% !important;
+  }
+  .mobile-only-story .story-p {
+    line-height: 1.65 !important;
+    margin-bottom: 20px !important;
+    text-align: left;
+  }
+  .mobile-only-story .center-element {
+    text-align: center !important;
+  }
+  .mobile-only-story .story-quote-accent.center-quote {
+    text-align: center;
+    border: none;
+    padding: 0;
+    margin: 32px 0;
+  }
