@@ -11302,23 +11302,37 @@ p:last-child,
     width: 32% !important;
     height: auto !important;
     aspect-ratio: 1 / 1 !important;
-    right: -5% !important;
-    top: -5% !important;
+    right: -6% !important;
+    top: -6% !important;
     padding: 6% !important;
     box-sizing: border-box !important;
     border-radius: 50% !important;
+    box-shadow: 0 10px 20px rgba(255, 94, 54, 0.4) !important;
   }
 
   .badge-tag {
     font-size: clamp(8px, 2.5vw, 10px) !important;
+    margin-bottom: 2px !important;
   }
 
   .badge-title {
-    font-size: clamp(10px, 3vw, 12px) !important;
+    font-size: clamp(10px, 3.2vw, 13px) !important;
+    margin-bottom: 2px !important;
+  }
+
+  .badge-divider-dashed {
+    width: 80% !important;
+    margin: 2px auto 3px !important;
+    border-top: 1.5px dashed rgba(255, 255, 255, 0.9) !important;
   }
 
   .badge-sub {
-    font-size: clamp(8px, 2.5vw, 10px) !important;
+    font-size: clamp(7px, 2.3vw, 9px) !important;
+  }
+
+  .iphone-frame {
+    padding: 5px !important;
+    border: 2px solid #2d2d30 !important;
   }
 
   .hero-meta {
@@ -11326,21 +11340,91 @@ p:last-child,
     /* Reduce space below phone */
   }
 
-  /* Fix Hero Headline Wrapping */
+  /* --- Hero Typography Polish Pass --- */
+
+  /* 1. Hero Container - Asymmetric Space */
+  .hero-container {
+    padding-left: 26px !important;
+    padding-right: 20px !important;
+  }
+
+  /* 2. Hero Headline Wrapping & Sizing */
   .hero-title {
-    max-width: 90vw !important;
-    margin: 0 auto !important;
+    max-width: 320px !important;
+    /* Force natural break before ยังไง */
+    margin: 0 auto 24px !important;
   }
 
-  .hero-title-line-1 {
-    font-size: clamp(24px, 6vw, 32px) !important;
-    line-height: 1.25 !important;
-  }
-
+  .hero-title-line-1,
   .hero-title-line-2 {
-    font-size: clamp(22px, 5.5vw, 30px) !important;
-    line-height: 1.25 !important;
+    font-size: clamp(24px, 6vw, 29px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: normal !important;
   }
+
+  /* 3. Audience Box */
+  .hero-audience-card {
+    padding: 16px 20px !important;
+    margin: 0 auto 32px !important;
+  }
+
+  /* Override inline gap from hero-description */
+  .hero-description {
+    gap: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* 4. Orange Benefit Statement */
+  .hero-outcome-wrap {
+    text-align: left !important;
+    margin-bottom: 32px !important;
+  }
+
+  .hero-outcome-text {
+    text-align: left !important;
+    line-height: 1.35 !important;
+  }
+
+  /* 5. Main Product Explanation */
+  .hero-mechanism-wrap {
+    text-align: left !important;
+    margin-bottom: 36px !important;
+  }
+
+  .hero-mechanism-copy {
+    font-size: clamp(16px, 4.3vw, 17px) !important;
+    line-height: 1.65 !important;
+    letter-spacing: normal !important;
+    text-align: left !important;
+    max-width: 95% !important;
+    /* Help phrasing wrap naturally without orphan */
+  }
+
+  /* 6. "ผมใช้เวลาหลายปี..." Statement */
+  .hero-insight-wrap {
+    margin-bottom: 36px !important;
+  }
+
+  .insight-primary-new {
+    text-align: center !important;
+    margin-bottom: 32px !important;
+    max-width: 290px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: clamp(16px, 4.3vw, 17.5px) !important;
+    line-height: 1.4 !important;
+  }
+
+  /* 7. Final Supporting Paragraph */
+  .insight-secondary-new {
+    text-align: left !important;
+    font-size: clamp(16px, 4.3vw, 17px) !important;
+    line-height: 1.65 !important;
+    letter-spacing: normal !important;
+    max-width: 100% !important;
+  }
+
+  /* --- Fix Hero Headline Wrapping (Cleanup Pass Override) --- */
 
   /* --- 2-Column Grid Equal Heights --- */
   .outcomes-grid,
