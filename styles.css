@@ -11172,7 +11172,7 @@ section, #real-problem {
     grid-template-columns: 48px minmax(0, 1fr) !important;
     column-gap: 14px !important;
     align-items: start !important;
-    padding: 16px 18px !important;
+    padding: 14px 16px !important;
     border-radius: 18px !important;
     height: auto !important;
     min-height: 0 !important;
@@ -11192,16 +11192,17 @@ section, #real-problem {
     color: #475569 !important;
   }
   .chat-message-text, .featured-message-text, .featured-quote-line {
-    font-size: 15.5px !important;
+    font-size: 15px !important;
     line-height: 1.55 !important;
     font-weight: 450 !important;
     white-space: normal !important;
   }
   .chat-hl, .featured-quote-accent {
-    font-size: 15.5px !important;
+    font-size: 15px !important;
     font-weight: 650 !important;
     color: var(--primary, #FF5E36) !important;
     white-space: normal !important;
+    padding: 0 4px !important;
   }
   .keep-together-mobile {
     white-space: nowrap !important;
@@ -11297,7 +11298,7 @@ section, #real-problem {
   }
   .faq-section .accordion-header span:first-child {
     font-size: 17.5px !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     line-height: 1.4 !important;
     text-align: left !important;
     text-wrap: balance !important;
