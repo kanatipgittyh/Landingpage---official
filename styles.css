@@ -9727,6 +9727,12 @@ section, #real-problem {
     width: 100% !important;
     box-sizing: border-box !important;
   }
+  
+  .story-quote-accent .keep-together {
+    white-space: nowrap !important;
+    font-size: clamp(15px, 4.5vw, 17.6px) !important;
+    display: inline-block !important;
+  }
 
   .story-method-note {
     margin: 0 !important;
@@ -11159,15 +11165,18 @@ section, #real-problem {
   /* Mobile Chat Review Cards */
   .chat-reviews-grid { gap: 14px !important; }
   .chat-review-card, .chat-review-card.featured-testimonial {
+    width: calc(100% - 32px) !important;
+    max-width: 360px !important;
+    margin-inline: auto !important;
     display: grid !important;
     grid-template-columns: 48px minmax(0, 1fr) !important;
-    column-gap: 15px !important;
+    column-gap: 14px !important;
     align-items: start !important;
-    padding: 18px 20px !important;
-    border-radius: 20px !important;
+    padding: 16px 18px !important;
+    border-radius: 18px !important;
     height: auto !important;
     min-height: 0 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
   }
   .chat-avatar-frame, .chat-avatar-img {
     width: 48px !important;
@@ -11176,20 +11185,20 @@ section, #real-problem {
     margin: 0 !important;
   }
   .chat-user-name {
-    font-size: 14px !important;
+    font-size: 13.5px !important;
     font-weight: 650 !important;
     line-height: 1.3 !important;
     margin-bottom: 4px !important;
     color: #475569 !important;
   }
   .chat-message-text, .featured-message-text, .featured-quote-line {
-    font-size: 16px !important;
-    line-height: 1.6 !important;
+    font-size: 15.5px !important;
+    line-height: 1.55 !important;
     font-weight: 450 !important;
     white-space: normal !important;
   }
   .chat-hl, .featured-quote-accent {
-    font-size: 16px !important;
+    font-size: 15.5px !important;
     font-weight: 650 !important;
     color: var(--primary, #FF5E36) !important;
     white-space: normal !important;
