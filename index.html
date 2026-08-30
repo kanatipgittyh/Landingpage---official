@@ -635,7 +635,21 @@
         </div>
 
         <div class="showcase-value-prop text-center scroll-fade-up">
-          <p class="value-prop-main">“ไม่ต้องจำทั้งเล่ม แค่รู้ว่าจะเปิดแผนที่ไหน ในจังหวะไหน”</p>
+          <style>
+            .guidemap-headline-mobile { display: none; }
+            @media (max-width: 768px) {
+              .guidemap-headline-desktop { display: none; }
+              .guidemap-headline-mobile { 
+                display: inline-block; 
+                font-size: 0.95em; 
+                line-height: 1.35; 
+              }
+            }
+          </style>
+          <p class="value-prop-main">
+            <span class="guidemap-headline-desktop">“ไม่ต้องจำทั้งเล่ม แค่รู้ว่าจะเปิดแผนที่ไหน ในจังหวะไหน”</span>
+            <span class="guidemap-headline-mobile">“ไม่ต้องจำทั้งเล่ม<br>แค่รู้ว่าจังหวะนี้ควรเปิด<span style="white-space: nowrap;">แผนที่ไหน”</span></span>
+          </p>
           <p class="value-prop-sub">
             Guidemap ทั้ง 2 ชุดรวมอยู่กับ Guidebook
           </p>

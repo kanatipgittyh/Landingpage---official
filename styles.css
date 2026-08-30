@@ -7753,21 +7753,21 @@ p.desc-desktop {
     border-radius: 14px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .showcase-top {
-    min-height: 52px;
+    min-height: 84px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   .situation-label {
     font-size: 0.72rem;
     line-height: 1.25;
     margin-bottom: 4px;
-    min-height: 28px;
+    min-height: auto;
     display: flex;
     align-items: flex-end;
   }
@@ -7782,6 +7782,9 @@ p.desc-desktop {
     height: 230px;
     padding: 6px 6px 0 6px;
     border-radius: 10px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .guidemap-preview-label {
@@ -7793,13 +7796,21 @@ p.desc-desktop {
   .guidemap-img-wrapper {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    position: relative;
+    flex: 1;
+    overflow: hidden;
   }
 
   .guidemap-preview-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
+    width: 250%;
+    height: auto;
+    max-width: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: initial;
+    object-position: initial;
   }
 
   .guidemap-fade-gradient {
@@ -7822,9 +7833,20 @@ p.desc-desktop {
     height: 12px;
   }
 
+  .showcase-bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
   .outcome-box {
     padding: 10px 6px;
     border-radius: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .outcome-highlight {
