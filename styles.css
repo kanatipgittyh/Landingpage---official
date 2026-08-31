@@ -11022,8 +11022,8 @@ section, #real-problem {
     margin-top: 24px !important;
   }
   .hero-product-wrapper {
-    width: min(96vw, 440px) !important;
-    max-width: 440px !important;
+    width: min(92vw, 430px) !important;
+    max-width: 430px !important;
     margin-inline: auto !important;
     position: relative !important;
     background: transparent !important;
@@ -11039,18 +11039,20 @@ section, #real-problem {
 
   /* Re-styled Product Description (Now sitting below mockup) */
   .hero-mechanism-copy { 
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 8px !important;
-    font-size: clamp(15px, 4vw, 16px) !important; 
-    line-height: 1.6 !important; 
+    display: block !important;
+    font-size: clamp(15px, 4vw, 15.5px) !important; 
+    line-height: 1.65 !important; 
     font-weight: 450 !important;
+    letter-spacing: normal !important;
     text-align: center !important; 
-    max-width: min(100%, 345px) !important;
+    max-width: 375px !important;
     margin-inline: auto !important;
-    padding-inline: 20px !important;
+    padding-inline: 16px !important;
     color: var(--text-dark, #0F172A) !important;
     margin-bottom: 28px !important; /* Spacing to price */
+  }
+  .hero-mechanism-copy .desc-group {
+    display: inline !important;
   }
   .hero-mechanism-copy strong { 
     font-weight: 700 !important; 
